@@ -52,13 +52,13 @@ cd ..
 
 # Déployer sur Kubernetes
 echo "Déploiement du Service de Produits sur Kubernetes..."
-kubectl apply -f k8s/product-service.yaml
+kubectl apply -f kubernetes/product-service.yaml
 
 echo "Attente que le Service de Produits soit prêt..."
 kubectl wait --for=condition=available --timeout=300s deployment/product-service
 
 echo "Déploiement du Service d'Inventaire sur Kubernetes..."
-kubectl apply -f k8s/inventory-service.yaml
+kubectl apply -f kubernetes/inventory-service.yaml
 
 echo "Attente que le Service d'Inventaire soit prêt..."
 kubectl wait --for=condition=available --timeout=300s deployment/inventory-service

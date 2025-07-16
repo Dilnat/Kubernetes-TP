@@ -135,7 +135,7 @@ curl http://localhost:5000/health             # Health check
 │   ├── server.js            # API Express avec données simulées
 │   ├── package.json         # Dépendances (express)
 │   └── Dockerfile           # Image Docker
-├── k8s/                     # Manifestes Kubernetes
+├── kubernetess/                     # Manifestes Kubernetes
 │   ├── inventory-service.yaml   # Deployment + Service pour Inventaire
 │   └── product-service.yaml    # Deployment + Service pour Produits
 ├── deploy.sh                # Script de déploiement k3s
